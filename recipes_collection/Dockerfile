@@ -11,7 +11,6 @@ RUN apt-get update -yqq \
 WORKDIR /usr/src/app
 COPY Gemfile* ./
 
-CMD script/start
 # script runs when docket first starts
 COPY docker-entrypoint.sh docker-entrypoint.sh
 RUN chmod +x docker-entrypoint.sh

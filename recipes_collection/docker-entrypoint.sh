@@ -14,3 +14,5 @@ rm -f /usr/src/app/tmp/pids/server.pid
 
 # Run the command.
 exec "$@"
+
+

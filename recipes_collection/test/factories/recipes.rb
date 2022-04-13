@@ -1,8 +1,7 @@
 FactoryGirl.define do
   factory :recipe do
-    name "Mom's Spaghetti"
-    recipe_link "https://recipe.com"
-    image_link "https://image.com"
+    name { Faker::Hipster.sentence }
+    recipe_link { Faker::Internet.url }
     association(:user)
   end
 end
